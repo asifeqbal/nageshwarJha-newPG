@@ -39,22 +39,18 @@
         <div class="app">
             <h1>Apache Cordova</h1>
             <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+                <p class="event listening">Connecting to Device1</p>
+                <p class="event received">Device is Ready1</p>
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript">
 		
-		navigator.globalization.getPreferredLanguage(
-		function (language) {
-					alert('baal1');
-						},
-			function () {
-			alert('Error getting language\n');
-			}
-			);
+		document.addEventListener("deviceready", onDeviceReady, false);
+				function onDeviceReady() {
+				console.log(navigator.globalization);
+							};
 		
 		</script>
 		
