@@ -47,10 +47,10 @@
         <script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript">
 		
-		document.addEventListener("deviceready", onDeviceReady, false);
-			function onDeviceReady() {
-				console.log(navigator.globalization);
-							};
+		$(document).ready(function(){
+			$('h2').click(function(){
+					alert('yes this is working');
+				})
 		
 		</script>
 		

@@ -48,12 +48,15 @@
         <script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript">
 		
-	document.addEventListener("deviceready",onDeviceReady,false);
-	function onDeviceReady()                    
-			{  
-							alert('baal');
-					
-		};
+	
+		$(document).ready(function(){
+			
+		$('p').click(function(){
+			
+		$(this).hide();//this selector main koi v '' or "" use nhi hoga yh un savi selector ko hide krr dega jo click hoge.
+			
+		});
+		});
 		</script>
 		
     </body>
