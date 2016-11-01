@@ -40,23 +40,21 @@
             <h1>Apache Cordova</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device1</p>
-                <p class="event received">Device is Ready1</p>
+                <p class="event received">baal</p>
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
 		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript">
 		
-	
-		$(document).ready(function(){
-			
-		$('p').click(function(){
-			
-		$(this).hide();//this selector main koi v '' or "" use nhi hoga yh un savi selector ko hide krr dega jo click hoge.
-			
-		});
-		});
+		document.addEventListener("deviceready",onDeviceReady,false);
+		
+		function onDeviceReady()                    
+			{  
+			alert('hi');
+			}
 		</script>
 		
     </body>
