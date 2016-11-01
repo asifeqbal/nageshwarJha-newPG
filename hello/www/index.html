@@ -49,12 +49,10 @@
         <script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript">
 		
-		document.addEventListener("deviceready",onDeviceReady,false);
-		
-		function onDeviceReady()                    
-			{  
-			alert('baal');
-			}
+		navigator.globalization.getPreferredLanguage(
+    function (language) {alert('language: ' + language.value + '\n');},
+    function () {alert('Error getting language\n');}
+);
 		</script>
 		
     </body>
